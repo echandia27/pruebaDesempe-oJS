@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUDTASK - Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="adminDashboard" class="min-h-screen bg-slate-50 p-4">
+  <header class="max-w-4xl mx-auto flex items-center justify-between">
+    <div>
+      <h1 class="text-xl font-bold">Dashboard Admin</h1>
+      <p class="text-sm text-slate-500">Hola, <span id="adminName"></span></p>
+    </div>
+
+    <nav class="flex gap-3 text-sm">
+      <a class="underline" href="admin-tasks.html">Gestionar tareas</a>
+      <a class="underline" href="../index.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-4 grid md:grid-cols-4 gap-3">
+    <div class="bg-white p-4 rounded-2xl border shadow-sm">
+      <p class="text-sm text-slate-500">Total tareas</p>
+      <p class="text-2xl font-bold" id="mTotal">0</p>
+    </div>
+    <div class="bg-white p-4 rounded-2xl border shadow-sm">
+      <p class="text-sm text-slate-500">Pending</p>
+      <p class="text-2xl font-bold" id="mPending">0</p>
+    </div>
+    <div class="bg-white p-4 rounded-2xl border shadow-sm">
+      <p class="text-sm text-slate-500">In progress</p>
+      <p class="text-2xl font-bold" id="mProgress">0</p>
+    </div>
+    <div class="bg-white p-4 rounded-2xl border shadow-sm">
+      <p class="text-sm text-slate-500">Completed</p>
+      <p class="text-2xl font-bold" id="mCompleted">0</p>
+    </div>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

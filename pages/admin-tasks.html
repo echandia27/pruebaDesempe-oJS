@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUDTASK - Admin tareas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="adminTasks" class="min-h-screen bg-slate-50 p-4">
+  <header class="max-w-4xl mx-auto flex items-center justify-between">
+    <h1 class="text-xl font-bold">Gestionar tareas (Admin)</h1>
+    <div class="flex gap-3">
+      <a class="px-3 py-2 rounded-xl border" href="admin-dashboard.html">Dashboard</a>
+      <button id="logoutBtn" class="px-3 py-2 rounded-xl bg-red-600 text-white">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-4">
+    <div id="msg"></div>
+    <section class="grid gap-3 mt-3" id="taskList"></section>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

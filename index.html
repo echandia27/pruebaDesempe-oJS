@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body data-page="login" class="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+  <main class="w-full max-w-md bg-white p-6 rounded-2xl shadow-sm border">
+    <h1 class="text-2xl font-bold text-slate-900">WELCOME BACK</h1>
+    <p class="text-slate-500 mt-1">Sign in to continue</p>
+
+    <form id="loginForm" class="mt-6 space-y-3">
+      <div>
+        <label for="email" class="text-sm text-slate-600">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="w-full mt-1 border rounded-xl px-3 py-2 outline-none focus:ring-2 focus:ring-slate-300"
+          placeholder="correo@example.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password" class="text-sm text-slate-600">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="w-full mt-1 border rounded-xl px-3 py-2 outline-none focus:ring-2 focus:ring-slate-300"
+          placeholder="******"
+          required
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-slate-900 text-white rounded-xl py-2 font-semibold hover:bg-slate-800 transition"
+      >
+        Enter
+      </button>
+    </form>
+
+    <div id="msg"></div>
+
+    <p class="text-sm text-slate-500 mt-5">
+      Don't you have an account?
+      <a class="text-slate-900 underline" href="./pages/register.html">Sign up</a>
+    </p>
+
+  </main>
+
+  <!-- This will be in charge of bringing all the JS -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

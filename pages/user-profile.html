@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="userProfile" class="min-h-screen bg-slate-50 p-4">
+  <main class="max-w-xl mx-auto bg-white p-6 rounded-2xl border shadow-sm">
+    <h1 class="text-xl font-bold">Perfil</h1>
+
+    <div class="mt-4 space-y-2 text-slate-700">
+      <p><b>Nombre:</b> <span id="name"></span></p>
+      <p><b>Email:</b> <span id="email"></span></p>
+      <p><b>Rol:</b> <span id="role"></span></p>
+    </div>
+
+    <div class="mt-6 flex gap-3">
+      <a href="user-task.html" class="px-4 py-2 rounded-xl border">Volver</a>
+      <button id="logoutBtn" class="px-4 py-2 rounded-xl bg-red-600 text-white">Cerrar sesión</button>
+    </div>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

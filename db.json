@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "c9d4c6d4-cdd9-489e-9fda-6d27a47226fb",
+      "name": "juan",
+      "email": "juan@mail.com",
+      "password": "1234",
+      "role": "user",
+      "createdAt": "2026-02-02T06:37:31.692Z"
+    },
+    {
+      "id": "68d1",
+      "name": "admin",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "cac9",
+      "title": "Rapear",
+      "description": "A ver si ganamos platica",
+      "status": "in progress",
+      "userId": "c9d4c6d4-cdd9-489e-9fda-6d27a47226fb",
+      "createdAt": "2026-02-02T22:53:35.059Z"
+    }
+  ]
+}
